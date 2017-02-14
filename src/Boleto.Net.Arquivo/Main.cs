@@ -79,7 +79,7 @@ namespace BoletoNet.Arquivo
 
             Instrucao_Itau item1 = new Instrucao_Itau(9, 5);
             Instrucao_Itau item2 = new Instrucao_Itau(81, 10);
-            Cedente c = new Cedente("00.000.000/0000-00", "Empresa de Atacado", "0542", "13000");
+            Cedente c = new Cedente("00.000.000/0000-00", "Empresa de Atacado", "8170", "56999", "3");
             //Na carteira 198 o código do Cedente é a conta bancária
             c.Codigo = "13000";
 
@@ -135,11 +135,11 @@ namespace BoletoNet.Arquivo
                     break;
                 case TipoArquivo.CNAB400:
                     GeraArquivoCNAB400(b2.Banco, c, boletos);
-                    break;             
+                    break;
                 default:
                     break;
-            }            
-                
+            }
+
         }
         public void GeraDadosBanrisul()
         {
